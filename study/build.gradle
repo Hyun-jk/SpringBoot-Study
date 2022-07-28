@@ -30,10 +30,10 @@ repositories {
 }
 //이 프로젝트에서 사용할 라이브러리를 명시하면 그래들이 리포지터리에서 라이브러리를 다운 및 설치를 한다.
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa' //스프링 데이터JPA를 사용하기 위한 라이브러리
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'
-	runtimeOnly 'com.h2database:h2'
+	runtimeOnly 'com.h2database:h2' //데이터베이스로 로컬 환경에서 메모리상에 데이터베이스를 구축해준다.
 	annotationProcessor 'org.projectlombok:lombok' //개발 시간 단축을 위해 롬복 라이브러리를 사용
 												   //롬복은 어노테이션을 추가하면 컴파일 시 그에 상응하는 코드를 만들어주는 라이브러리
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
