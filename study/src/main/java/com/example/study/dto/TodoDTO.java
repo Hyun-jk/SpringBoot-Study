@@ -26,4 +26,15 @@ public class TodoDTO {
 		this.title = entity.getTitle();
 		this.done = entity.isDone();
 	}
+	
+	//Http응답을 반환할 때 비즈니스 로직을 캡슈활하거나 추가적인 정보를 함께 반환하려고 DTO를 사용한다고 하였다.
+	//컨트롤러는 사용자에게서 TodoDTO를 요청 바디로 넘겨받고 이를 TodoENtity로 변환해 저장해야한다.
+	public static TodoEntity toEntity(final TodoDTO dto) {
+		return TodoEntity.builder()
+						 .id(dto.getId())
+						 .title(dto.getTitle())
+						 .done(dto.isDone()).build();
+	}
+
+	
 }

@@ -13,7 +13,10 @@ public interface TodoRepository extends JpaRepository<TodoEntity,String> {
 	
 	//더 복잡한 쿼리는@Query 어노테이션을 사용해 지정할 수 있다.
 	//?1은 메서드의 매개변수의 순서 위치다.
-	@Query("select * FROM Todo t WHERE t.userId = ?1")
+	
+	//@Query("select * from Todo t where t.userId = ?1") >>Query 문으로 실행이 안되는데 왜 안되는거지?
+	//나중에 Query로 작성할 때 확인해보자
+	
 	List<TodoEntity> findByUserId(String userId);
 	
 	//이 메서드를 작성하면 스프링 데이터 JPA가 메서드 이름을 파싱해서

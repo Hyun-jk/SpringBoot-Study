@@ -21,6 +21,7 @@ import lombok.NoArgsConstructor;
 @Table(name = "Todo") //테이블 이름을 지정, 이 엔터티는 데이터베이스 Todo 테이블에 매핑이 된다는 의미이다.
 					  //@Table을 추가하지 않거나, 추가해도 name을 명시하지 않으면 @Entity의 이름을 테이블 이름으로 간주한다.
 					  //@Entity의 이름을 지정하지 않는 경우 클래스의 이름을 테이블 이름으로 간주한다.
+
 public class TodoEntity {
 	@Id //기본 키가 될 필드에 지정
 	@GeneratedValue(generator = "system-uuid") //ID를 자동으로 생성하겠다는 의미, system-uuid라는 generator를 사용한다는 의미
