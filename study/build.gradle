@@ -32,6 +32,8 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa' //스프링 데이터JPA를 사용하기 위한 라이브러리
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-security' //스프링 시큐리티
+	
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.h2database:h2' //데이터베이스로 로컬 환경에서 메모리상에 데이터베이스를 구축해준다.
 	annotationProcessor 'org.projectlombok:lombok' //개발 시간 단축을 위해 롬복 라이브러리를 사용
@@ -39,6 +41,10 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	// https://mvnrepository.com/artifact/com.google.guava/guava >>>>구글 구아바 라이브러리 추가
 	implementation group: 'com.google.guava', name: 'guava', version: '28.1-jre'
+	
+	// https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt
+	implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
+
 }
 
 tasks.named('test') {
