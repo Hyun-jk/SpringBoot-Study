@@ -5,9 +5,6 @@
   - Spring Boot의 공부 필요성
   - <a href="https://product.kyobobook.co.kr/detail/S000061838547">참고 문헌</a> 
 
-## 오류 정리
-- 작성중...
-
     
 
  
