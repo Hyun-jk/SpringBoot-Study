@@ -1,6 +1,15 @@
-# SpringBoot-Project
-react.js, 스프링부트, AWS 를 이용한 TodoList 만들어보기
-## What I want to learn 
-## What I have a problem
-## How to solve the problem
-## What I learn 
+## Spring Boot,React,AWS Study
+
+* 공부 배경
+  - Spring Project에서 실제 서비스까지 진행되지 못한 부분에 대한 아쉬움으로 AWS 공부
+  - Spring Boot의 공부 필요성
+* <a href="https://product.kyobobook.co.kr/detail/S000061838547">참고 문헌</a> 
+
+# 오류 정리
+
+    
+
+ 
+
+
+
